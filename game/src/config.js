@@ -18,7 +18,11 @@ export const GAME = {
   interactRange: 78,
   spawnIntervalStart: 14,
   spawnIntervalEnd: 8,
-  starCoins: [60, 120, 200],
+  // Star thresholds, calibrated from measured play: one scripted omelet serve
+  // (crate -> pan -> plate -> window, with real cook/chop waits) pays ~22 coins
+  // in ~40 s, so a steady cook serves ~2 dishes a minute: 1 star ~3 dishes,
+  // 2 stars ~6, 3 stars ~8 dishes plus combo bonuses.
+  starCoins: [50, 100, 150],
 };
 
 export const INGREDIENTS = {
